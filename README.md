@@ -22,7 +22,7 @@ public class JdbcReadFile {
         String user = "root";
         String password = "secret";
  
-        String filePath = "D:/Photos/Tom.jpg";
+        String filePath = "D:/Loan.exe";
  
         try {
             Connection conn = DriverManager.getConnection(url, user, password);
