@@ -1,0 +1,177 @@
+@charset "ISO-8859-1";
+
+body {
+	font-family: Barlow, sans serif;
+	overflow-x: hidden;
+}
+
+h3 {
+	font-family: Roboto, serif;
+}
+
+h5 {
+	font-weight: bolder;
+	font-family: "Noto Sans", sans-serif;
+}
+
+.up {
+	font-weight: bolder;
+	font-family: "Noto Sans", sans-serif;
+}
+
+.moreCont {
+	font-family: "Noto Sans", sans-serif;
+	/* font-weight: 600; */
+	font-size: 13px;
+	color: #000089;
+}
+
+.head {
+	font-family: "Noto Sans", sans-serif;
+}
+
+p {
+	font-family: "Noto Sans", sans-serif;
+	/* font-weight: 600; */
+	font-size: 13px;
+	color: #000089;
+}
+
+.basicList {
+	font-family: "Noto Sans", sans-serif;
+	/* font-weight: 600; */
+	font-size: 13px;
+	color: #000089;
+}
+
+.sidenav {
+	margin-left: 70px;
+	margin-top: 220px;
+	padding-top: 20px;
+	position: fixed;
+
+	/* overflow: auto; */
+}
+
+.sidenav a {
+	font-size: 13px !important;
+	font-family: Roboto, serif;
+}
+.sidenav a:hover {
+	color: #ff526f;
+}
+.tableWrapper {
+	font-family: "Noto Sans", sans-serif;
+	font-weight: bolder;
+}
+
+.sidebar a:hover {
+	color: #ff526f;
+}
+
+/* The side navigation menu */
+.sidebar {
+	margin-left: 50px;
+	padding: 5px;
+	width: 300px;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 470px;
+
+	/* overflow: auto; */
+}
+
+/* Sidebar links */
+.sidebar a {
+	color: black;
+	padding: 16px;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: bolder;
+	font-family: Roboto, serif;
+}
+
+/* Active/current link */
+.sidebar a.active {
+	background-color: #f1f1f1;
+	color: #C21B66;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active ) {
+	color: #C21B66;
+}
+.links {
+	display: inline;
+}
+
+.sidenav li {
+	font-size: 9px !important;
+}
+
+/* Page content1. The value of the margin-left property should match the value of the sidebar's width property */
+div.content1 {
+	margin-left: 100px;
+	padding: 0px 320px;
+	height: 1000px;
+	width: 1500px;
+}
+
+.bgc {
+	background-color: #e8f4ff;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+	.sidebar {
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+	.sidebar a {
+		float: left;
+	}
+	div.content1 {
+		margin-left: 0;
+	}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+	.sidebar a {
+		text-align: center;
+		float: none;
+	}
+}
+
+hr {
+	border-color: #72bcd4;
+}
+
+[data-toggle="collapse"][aria-expanded="true"]>.js-rotate-if-collapsed {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.right {
+	float: right;
+}
+
+.right1 {
+	padding-left: 160px;
+}
+
+.rightbutton {
+	padding-left: 650px;
+}
+
+.line div {
+	display: inline;
+}
+
+.pad {
+	padding-right: 10px;
+}
