@@ -30,6 +30,8 @@
                 
                 String qry="INSERT INTO `jsp1`( `name`, `amt`, `acc`, `months`) SELECT `name`, `amt`, `acc`, `monpaid` FROM `jsp` WHERE monpaid>2";
                 st.executeUpdate(qry);
+                String qry1 ="DELETE FROM `jsp` WHERE monpaid>2";
+                st.executeUpdate(qry1);
                 
                 
                 
