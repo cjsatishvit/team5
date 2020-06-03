@@ -2,9 +2,9 @@
  * Author:        	Hirthik Mathavan
  * Reg. No.:      	18BCE2036
  * Name:        	Servletcreditcardloan.java
- * Purpose:       	Sends Data from helpmanual Database using FaqsDAO.java to creditcard.jsp
+ * Purpose:       	Sends Data from helpmanual Database using HELP_MANUAL.java to creditcard.jsp
  * Class Used by:   pagecontent.jsp; (creditcard)
- * Classes Used:    FaqsDAO.java, Quesans.java;
+ * Classes Used:    HELP_MANUAL.java;
  */
 
 package javaservlet;
@@ -26,10 +26,12 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/user-creditcardloan")
 public class Servletcreditcardloan extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private FaqsDAO userDAO;
+	
+	private HELP_MANUAL user;
 
 	public void init() {
-		userDAO = new FaqsDAO();
+		
+		user = new HELP_MANUAL();
 	}
     /**
      * @see HttpServlet#HttpServlet()
@@ -60,7 +62,7 @@ public class Servletcreditcardloan extends HttpServlet {
 	   * Author:       	Hirthik Mathavan
 	   * Reg. No:       18BCE2036
 	   * Function Name: listFaqs()
-	   * Purpose:       Accesses the selectCreditcardloanFaqs method of FaqsDAO and stores them in a list object of Quesans and 
+	   * Purpose:       Accesses the PROVIDE_SUPPORT2 method of HELP_MANUAL and stores them in a list object of Quesans and 
 	   * 				dispatches it to creditcard.jsp.
 	   * Arguments:     HttpServletRequest; HttpServletResponse;
 	   * Return:        -
@@ -69,7 +71,7 @@ public class Servletcreditcardloan extends HttpServlet {
 	private void listFaqs(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, IOException, ServletException, ClassNotFoundException {
 
-		List<Quesans> listFaqs1 = userDAO.selectCreditcardloanFaqs();
+		List<HELP_MANUAL> listFaqs1 = user.PROVIDE_SUPPORT2();
 		request.setAttribute("listFaqs1", listFaqs1);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("creditcard.jsp");
 		dispatcher.forward(request, response);

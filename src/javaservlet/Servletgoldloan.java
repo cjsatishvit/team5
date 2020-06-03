@@ -2,9 +2,9 @@
  * Author:        	Hirthik Mathavan
  * Reg. No.:      	18BCE2036
  * Name:        	Servletgoldloan.java
- * Purpose:       	Sends Data from helpmanual Database using FaqsDAO.java to index.jsp
+ * Purpose:       	Sends Data from helpmanual Database using HELP_MANUAL.java to index.jsp
  * Class Used by:   pagecontent.jsp; (gold)
- * Classes Used:    FaqsDAO.java, Quesans.java;
+ * Classes Used:    HELP_MANUAL.java;
  */
 
 package javaservlet;
@@ -26,10 +26,12 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/user-goldloan")
 public class Servletgoldloan extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private FaqsDAO userDAO;
+	
+	private HELP_MANUAL user;
 
 	public void init() {
-		userDAO = new FaqsDAO();
+		
+		user = new HELP_MANUAL();
 	}
     
 	/**
@@ -61,7 +63,7 @@ public class Servletgoldloan extends HttpServlet {
 	   * Author:       	Hirthik Mathavan
 	   * Reg. No:       18BCE2036
 	   * Function Name: listFaqs()
-	   * Purpose:       Accesses the selectGoldloanFaqs method of FaqsDAO and stores them in a list object of Quesans and 
+	   * Purpose:       Accesses the PROVIDE_SUPPORT method of HELP_MANUAL and stores them in a list object of Quesans and 
 	   * 				dispatches it to index.jsp.
 	   * Arguments:     HttpServletRequest; HttpServletResponse;
 	   * Return:        -
@@ -69,7 +71,7 @@ public class Servletgoldloan extends HttpServlet {
 	
 	private void listFaqs(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, IOException, ServletException, ClassNotFoundException {
-		List<Quesans> listFaqs = userDAO.selectGoldloanFaqs();
+		List<HELP_MANUAL> listFaqs = user.PROVIDE_SUPPORT();
 		request.setAttribute("listFaqs", listFaqs);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
 		dispatcher.forward(request, response);

@@ -274,7 +274,7 @@
 									      },
 									      
 									      onSet: function (rating, rateYoInstance) {
-									     	 	
+									    	  alert("Rating is set to: " + rating);
 									    	  $("#rateYo1").rateYo("option", "readOnly", true);
 								    	    	$.ajax({
 								    	   	     url: "./InsertDatagoldloan",
@@ -330,7 +330,7 @@
 									      },
 									      
 									      onSet: function (rating, rateYoInstance) {
-									     	 	
+									    	  alert("Rating is set to: " + rating);
 									    	  $("#rateYo2").rateYo("option", "readOnly", true);
 								    	    	$.ajax({
 								    	   	     url: "./InsertDatagoldloan",
@@ -388,7 +388,7 @@
 									      },
 									      
 									      onSet: function (rating, rateYoInstance) {
-									     	 	
+									    	  alert("Rating is set to: " + rating);
 									    	  $("#rateYo3").rateYo("option", "readOnly", true);
 								    	    	$.ajax({
 								    	   	     url: "./InsertDatagoldloan",
@@ -446,7 +446,7 @@
 									      },
 									      
 									      onSet: function (rating, rateYoInstance) {
-									     	 	
+									    	  alert("Rating is set to: " + rating);
 									    	  	$("#rateYo4").rateYo("option", "readOnly", true);
 								    	    	$.ajax({
 								    	   	     url: "./InsertDatagoldloan",

@@ -9,7 +9,7 @@
 
 package javaservlet;
 
-public class Ratingfeedback {
+public class FEEDBACK {
 	int glfeedbackid;
 	int glrating;
 
@@ -17,14 +17,14 @@ public class Ratingfeedback {
 	int clrating;
 
 	// Constructor
-	public Ratingfeedback(int clfeedbackid, int clrating, boolean dummy) {
+	public FEEDBACK(int clfeedbackid, int clrating, boolean dummy) {
 		super();
 
 		this.clfeedbackid = clfeedbackid;
 		this.clrating = clrating;
 	}
 
-	public Ratingfeedback(int glfeedbackid, int glrating) {
+	public FEEDBACK(int glfeedbackid, int glrating) {
 		super();
 		this.glfeedbackid = glfeedbackid;
 		this.glrating = glrating;

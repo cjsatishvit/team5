@@ -3,7 +3,7 @@
  * Reg. No.:      	18BCE2036
  * Name:        	InsertDatacreditcardloan.java
  * Purpose:       	Receives ratings(with question number as feedbackid) from creditcard.jsp and stores them
- * 					in database using RatingFeedback.java class.
+ * 					in database using FEEDBACK.java class.
  * Class Used by:   creditcard.jsp
  * Classes Used:    DatabaseConnection.java
  */
@@ -54,7 +54,7 @@ public class InsertDatacreditcardloan extends HttpServlet {
 					.prepareStatement("insert into feedback.creditcardloan (feedbackid,`star rating`) values(?, ?)");
 
 			// get the data using request object // sets the data to st pointer
-			Ratingfeedback register = new Ratingfeedback(Integer.parseInt(request.getParameter("quesn")),
+			FEEDBACK register = new FEEDBACK(Integer.parseInt(request.getParameter("quesn")),
 					Integer.parseInt(request.getParameter("rating")), true);
 
 			st.setInt(1, register.getClfeedbackid());

@@ -3,7 +3,7 @@
  * Reg. No.:      	18BCE2036
  * Name:        	InsertDatagoldloan.java
  * Purpose:       	Receives ratings(with question number as feedbackid) from index.jsp and stores them
- * 					in database using RatingFeedback.java class.
+ * 					in database using FEEDBACK.java class.
  * Class Used by:   index.jsp
  * Classes Used:    DatabaseConnection.java
  */
@@ -49,14 +49,14 @@ public class InsertDatagoldloan extends HttpServlet {
 			// Initialize the database Connection
 			Connection con = DatabaseConnection.initializeDatabase();
 
-			// Create a SQL query to insert data into demo table // demo table consists of
+			// Create a SQL query to insert data into the table // table consists of
 			// two columns, so two '?' is used
 			PreparedStatement st = con
 					.prepareStatement("insert into feedback.goldloan (feedbackid,`star rating`) values(?, ?)");
 
 			// For the first parameter, // get the data using request object // sets the
 			// data to st pointer
-			Ratingfeedback register = new Ratingfeedback(Integer.parseInt(request.getParameter("quesn")),
+			FEEDBACK register = new FEEDBACK(Integer.parseInt(request.getParameter("quesn")),
 					Integer.parseInt(request.getParameter("rating")));
 
 			st.setInt(1, register.getGlfeedbackid());
