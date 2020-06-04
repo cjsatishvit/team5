@@ -27,6 +27,9 @@
             padding-left: 5px;
             background-color: white;
         }
+         tr{
+            height:40px;
+        }
         
        form{
             padding-top: 30px;
@@ -73,7 +76,7 @@
     <center>
         <h1>3+ Months Due Users</h1>
         <div class="tab">
-            <table style="width:600px;height: 200px;">
+            <table style="width:600px;">
                 <tr style="background-color: greenyellow">
                     <th>Name</th>
                     <th>Amount</th>
