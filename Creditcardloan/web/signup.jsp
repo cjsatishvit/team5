@@ -26,19 +26,19 @@
             <h1 style="color:blue">REGISTER</h1>
         <form action="signupjava.jsp" method="post">
             <label>NAME</label><br>
-            <input type="text" name="name"><br>
+            <input type="text" name="name" required><br>
             <label>SEX</label><br>
-            <input type="text" name="sex"><br>
+            <input type="text" name="sex" required><br>
             <label>ADDRESS</label><br>
-            <input type="text" name="address"><br>
+            <input type="text" name="address" required><br>
             <label>MOBILE</label><br>
-            <input type="number" name="mobile"><br>
+            <input type="number" name="mobile" required><br>
             <label>EMAIL ID</label><br>
-            <input type="email" name="email"><br>
+            <input type="email" name="email" required><br>
             <label>PASSWORD</label><br>
-            <input type="password" name="password"><br>
+            <input type="password" name="password" required><br>
             <label>RETYPE-PASSSWORD</label><br>
-            <input type="password" name="retype"><br>
+            <input type="password" name="retype" required><br>
             <br>
             <input type="submit" value="submit">
         </form>
