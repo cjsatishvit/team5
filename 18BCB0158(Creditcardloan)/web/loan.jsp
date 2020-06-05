@@ -35,6 +35,8 @@
             <label>MOBILE NUMBER</label><br>
             <input type="number" name="mobile" required><br>
             <label>ACCOUNT NUMBER</label><br>
+            <label>PAN NUMBER</label><br>
+            <input type="number"  name="pnumber" required><br>
             <input type="number" name="account" required><br>
             <label>EMI</label><br>
             <input type="number" name="emi" required ><br>
