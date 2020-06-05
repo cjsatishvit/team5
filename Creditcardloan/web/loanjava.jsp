@@ -33,7 +33,7 @@
         int numb=750;
         String str1=Integer.toString(a);
         String str2=Integer.toString(numb);
-        if(!total.equals(str1)&&!emi.equals(str1)&&mob.length()>=10&&Integer.parseInt(credit)>numb)
+        if(!total.equals(str1)&&!emi.equals(str1)&&mob.length()>=10&&number.length>=13&&Integer.parseInt(credit)>numb)
         {
        
             try
