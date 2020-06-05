@@ -14,9 +14,9 @@
         <h1>Forgot Password</h1>
         <form action="reset.jsp" method="post">
             <label>Email id</label><br>
-            <input type="email" name="id"><br>
+            <input type="email" name="id" required><br>
             <label>Password</label><br>
-            <input type="password" name="pass"><br>
+            <input type="password" name="pass" required><br>
             <input type="submit" value="submit">
         </form>
     </body>
