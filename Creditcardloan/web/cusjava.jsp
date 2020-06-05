@@ -52,7 +52,7 @@
                 Statement st=null;
                 int a=0;
                 String str1=Integer.toString(a);
-           if(tele.length()>=10||person.length()>=10||!income.equals(str1)||!age.equals(str1))
+           if(tele.length()>=10||person.length()>=10||pin.length()>=6||cpin.length>=6||!income.equals(str1)||!age.equals(str1))
            {
                 try
                 {
