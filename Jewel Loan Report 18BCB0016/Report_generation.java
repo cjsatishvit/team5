@@ -18,7 +18,7 @@ public class Report_Generation {
         	String user = "root";
        		String password = "secret";
       		String host= "jdbc:mysql://localhost:3306/jewel_loan";
-		String csvFilePath = "Reviews-export.csv";
+		String csvFilePath = "C:\Users\hp\Desktop\Report-export.csv";
 
       		Connection con = DriverManager.getConnection(host, user, password);
 		PreparedStatement ps=null;
